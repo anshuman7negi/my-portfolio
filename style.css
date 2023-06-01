@@ -1,10 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 .wrapper {
   position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  background: #FFFFFF;
+  background: #fff;
   width: 375px;
   height: 718px;
   background-image: url(images/header-background-mobile.svg);
@@ -17,10 +15,6 @@ header .nav-container {
   width: 375px;
   height: 48px;
   top: 44px;
-  left: 0px;
-  bottom: 0px;
-  
-
 }
 
 .logo {
@@ -29,7 +23,7 @@ header .nav-container {
   display: flex;
   align-items: center;
   padding: 10px 12px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -41,8 +35,6 @@ header .nav-container {
   width: 40px;
   height: 40px;
   padding: 8px;
- 
-
 }
 
 .hamburger image {
@@ -59,7 +51,7 @@ header .nav-container {
   position: absolute;
   width: 375px;
   height: 604px;
-  left: calc(50% - 375px/2);
+  left: calc(50% - 375px / 2);
   top: 92px;
   background-image: url(images/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
@@ -68,22 +60,22 @@ header .nav-container {
 .intro-name {
   width: 327px;
   height: 150px;
-  font-family: 'Poppins';
- font-style: normal;
- font-weight: 700;
- font-size: 40px;
- line-height: 52px;
- color: #172B4D;
- display: flex;
- align-items: center; 
- left: 24px;
- top: 114px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  display: flex;
+  align-items: center;
+  left: 24px;
+  top: 114px;
 }
 
 .intro-bio {
   width: 327px;
   height: 146px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -92,8 +84,8 @@ header .nav-container {
 
 .social-text {
   font-size: 16px;
-  color: #7F8CFF;
-  font-family: 'Poppins';
+  color: #7f8cff;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
@@ -105,6 +97,4 @@ header .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-
