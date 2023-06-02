@@ -349,6 +349,21 @@ fieldset > * {
   background: #fff;
 }
 
+.project-details-btn input:hover {
+  color: #fff;
+  background: #6070ff;
+}
+
+.project-details-btn input:active {
+  color: #fff;
+  background: #2230d2;
+}
+
+.project-details-btn input:disabled {
+  color: #5e6c84;
+  background: #fff;
+}
+
 .blackline {
   margin-bottom: 8px;
   background: #0d151e;
