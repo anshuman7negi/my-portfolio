@@ -59,8 +59,6 @@ The goal of this project is to create a visually appealing portfolio that showca
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 1. Go to this URL link: https://github.com/anshuman7negi/my-portfolio.git
