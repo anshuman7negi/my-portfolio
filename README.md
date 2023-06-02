@@ -21,7 +21,6 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -59,10 +58,6 @@ The goal of this project is to create a visually appealing portfolio that showca
 - **Code Quality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Demo link is coming soon](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
