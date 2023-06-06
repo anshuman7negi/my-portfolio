@@ -7,7 +7,6 @@
 }
 
 body {
-  width: 375px;
   font-family: "Poppins", sans-serif;
   background: #e5e5e5;
 }
@@ -20,18 +19,14 @@ body {
 }
 
 header .nav-container {
-  position: absolute;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 375px;
-  height: 48px;
 }
 
 .logo {
   width: 100px;
   height: 40px;
-  display: flex;
-  align-items: center;
   padding: 10px 12px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -42,9 +37,9 @@ header .nav-container {
 }
 
 .hamburger {
+  align-items: center;
   width: 40px;
   height: 40px;
-  padding: 8px;
 }
 
 .hamburger image {
@@ -52,10 +47,14 @@ header .nav-container {
   height: 24px;
 }
 
+.nav-container ul {
+  display: none;
+}
+
 .main {
   background-image: url(images/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
@@ -284,6 +283,87 @@ header .nav-container {
   background: #fff;
 }
 
+.contact-page {
+  background-color: #fff;
+}
+
+.contact-block {
+  background-image: url(images/contact\ form\ shapes-mobile@2x.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: #6070ff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  border-top-left-radius: 60px;
+}
+
+.description {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 103px;
+}
+
+.description h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.description p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+form {
+  margin-top: 52px;
+  margin-bottom: 32px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 0;
+}
+
+fieldset > * {
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  padding: 15px 38px 15px 16px;
+}
+
+.contact-block button {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 22px;
+  color: #6070ff;
+  border: 1px solid #7f8cff;
+  margin-bottom: 45px;
+}
+
+.contact-block button:hover {
+  color: #fff;
+  background: #6070ff;
+}
+
+.contact-block button:active {
+  color: #fff;
+  background: #2230d2;
+}
+
+.contact-block button:disabled {
+  color: #5e6c84;
+  background: #fff;
+}
+
 .blackline {
   margin-bottom: 8px;
   background: #0d151e;
@@ -291,11 +371,4 @@ header .nav-container {
   height: 5px;
   align-self: center;
   border-radius: 10px;
-}
-
-@media only screen and (width >= 768px) {
-  .wrapper {
-    margin-bottom: 114px;
-    border-bottom-left-radius: 120px;
-  }
 }
