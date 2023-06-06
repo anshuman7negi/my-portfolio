@@ -283,15 +283,6 @@ header .nav-container {
   background: #fff;
 }
 
-.blackline {
-  margin-bottom: 8px;
-  background: #0d151e;
-  width: 134px;
-  height: 5px;
-  align-self: center;
-  border-radius: 10px;
-}
-
 .contact-page {
   background-color: #fff;
 }
@@ -355,4 +346,28 @@ fieldset > * {
   color: #6070ff;
   border: 1px solid #7f8cff;
   margin-bottom: 45px;
+}
+
+.contact-block button:hover {
+  color: #fff;
+  background: #6070ff;
+}
+
+.contact-block button:active {
+  color: #fff;
+  background: #2230d2;
+}
+
+.contact-block button:disabled {
+  color: #5e6c84;
+  background: #fff;
+}
+
+.blackline {
+  margin-bottom: 8px;
+  background: #0d151e;
+  width: 134px;
+  height: 5px;
+  align-self: center;
+  border-radius: 10px;
 }
