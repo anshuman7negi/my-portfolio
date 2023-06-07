@@ -13,9 +13,7 @@ body {
 
 .wrapper {
   background: #fff;
-  border-bottom-left-radius: 60px;
-  margin-bottom: 114px;
-  background-image: url(images/header-background-mobile.svg);
+  border-bottom-left-radius: 80px;
 }
 
 header .nav-container {
@@ -56,6 +54,7 @@ header .nav-container {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  padding: 114px 24px;
 }
 
 .main-section {
@@ -63,8 +62,6 @@ header .nav-container {
   flex-direction: column;
   justify-content: center;
   gap: 8px;
-  height: 100vh;
-  padding: 0 20px 20px 20px;
 }
 
 .main h1 {
@@ -107,7 +104,9 @@ header .nav-container {
 
 .work-section {
   display: grid;
-  padding: 0 20px;
+  padding: 114px 24px;
+  background-color: #e5e5e5;;
+  gap: 88px;
 }
 
 .card {
@@ -117,7 +116,6 @@ header .nav-container {
   border-radius: 16px;
   padding: 16px;
   gap: 12px;
-  margin-bottom: 100px;
 }
 
 .card img {
@@ -211,6 +209,7 @@ header .nav-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin: 0;
 }
 
 .top h2 {
@@ -372,3 +371,201 @@ fieldset > * {
   align-self: center;
   border-radius: 10px;
 }
+
+/* Desktop version using media query */
+  @media only screen and (width>=768px) {
+    .nav-container {
+      display: flex;
+      padding: 16px 144px;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .nav-container ul {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+    }
+
+    .nav-container ul li {
+      display: flex;
+      margin-right: 20px;
+    }
+
+    .main {
+      background-image: url(images/desktopbg.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 289px 260px;
+      border-bottom-left-radius: 80px;
+    }
+
+    .main-section {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+
+    .main h1 {
+      color: #172b4d;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    .main p {
+      color: #344563;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    .main h3 {
+      color: #7f8cff;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 12px;
+    }
+
+    /* work section started for desktop */
+    .work-section {
+      display: grid;
+      padding: 142px 142px;
+      gap: 142px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      padding: 24px;
+      gap: 24px;
+    }
+
+    .card-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      max-width: 100%;
+      width: 50%;
+    }
+
+    .card img {
+      max-width: 100%;
+      width: 50%;
+    }
+
+    .card-text h2 {
+      font-size: 40px;
+      font-weight: 700px;
+      line-height: 52px;
+      color: #091E42;;
+    }
+    
+    .card-text p {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #6b778c;
+    }
+    
+    .card-text strong {
+      color: #344563;
+      font-weight: 500;
+      
+    }
+    
+    .card-text i {
+      color: #c1c7d0;
+      margin: 0 4px;
+    }
+    
+    .card-text p.detail {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #344563;
+    }
+    /* Start of about section for desktop */
+    .aboutpage {
+      display: flex;
+      flex-direction: row;
+      padding: 142px;
+      border-top-right-radius: 120px;
+      justify-content: flex-start;
+      gap: 24px;
+    }
+
+    .top {
+      flex-basis: 41%;
+    }
+
+    .top h2 {
+      color: #344563;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 52px;
+    }
+
+    .top p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #344563;
+
+    }
+
+    .bottom {
+      flex-basis: 51%;
+    }
+
+    .skills-languages {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+    }
+
+    .skills-languages li {
+      display: flex;
+      flex-direction: column;
+      padding: 12px;
+    }
+
+    /* Start of contact page */
+    .contact-block {
+      background-image: url(images/contact\ desktop.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      border-top-left-radius: 120px;
+      padding: 142px 320px 127px 319px;
+    }
+
+    .description {
+      margin: 0;
+    }
+
+    .contact-block form {
+      margin: 12px 177px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 27px;
+    }
+
+    .contact-block button {
+      margin: 0;
+    }
+
+    .blackline {
+      display: none;
+    }
+
+  }
