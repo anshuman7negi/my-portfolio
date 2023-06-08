@@ -13,9 +13,7 @@ body {
 
 .wrapper {
   background: #fff;
-  border-bottom-left-radius: 60px;
-  margin-bottom: 114px;
-  background-image: url(images/header-background-mobile.svg);
+  border-bottom-left-radius: 80px;
 }
 
 header .nav-container {
@@ -56,6 +54,7 @@ header .nav-container {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  padding: 114px 24px;
 }
 
 .main-section {
@@ -63,8 +62,6 @@ header .nav-container {
   flex-direction: column;
   justify-content: center;
   gap: 8px;
-  height: 100vh;
-  padding: 0 20px 20px 20px;
 }
 
 .main h1 {
@@ -107,7 +104,9 @@ header .nav-container {
 
 .work-section {
   display: grid;
-  padding: 0 20px;
+  padding: 114px 24px;
+  background-color: #e5e5e5;
+  gap: 88px;
 }
 
 .card {
@@ -117,7 +116,6 @@ header .nav-container {
   border-radius: 16px;
   padding: 16px;
   gap: 12px;
-  margin-bottom: 100px;
 }
 
 .card img {
@@ -211,6 +209,7 @@ header .nav-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin: 0;
 }
 
 .top h2 {
@@ -243,7 +242,6 @@ header .nav-container {
 
 .skills-languages li {
   display: flex;
-  gap: 24px;
   list-style-type: none;
   align-items: center;
   background: #f7f7f9;
@@ -255,10 +253,18 @@ header .nav-container {
 .skills-languages img {
   width: 48px;
   height: 48px;
+  margin: 9px 12px;
 }
 
 .box {
   list-style-type: none;
+}
+
+.language-p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #344563;
 }
 
 .top h3 {
@@ -287,23 +293,27 @@ header .nav-container {
   background-color: #fff;
 }
 
-.contact-block {
+.contact-container {
   background-image: url(images/contact\ form\ shapes-mobile@2x.svg);
-  background-position: top right;
+  background-position: right;
   background-repeat: no-repeat;
   background-color: #6070ff;
-  display: flex;
-  flex-direction: column;
   padding: 0 24px;
   border-top-left-radius: 60px;
+}
+
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 125px;
 }
 
 .description {
   color: #fff;
   display: flex;
   flex-direction: column;
+  gap: 12px;
   align-items: center;
-  margin-top: 103px;
 }
 
 .description h2 {
@@ -316,13 +326,12 @@ header .nav-container {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+  color: #ebebff;
   text-align: center;
-  margin-top: 12px;
 }
 
 form {
   margin-top: 52px;
-  margin-bottom: 32px;
 }
 
 fieldset {
@@ -371,4 +380,246 @@ fieldset > * {
   height: 5px;
   align-self: center;
   border-radius: 10px;
+}
+
+/* Desktop version using media query */
+@media screen and (min-width: 768px) {
+  .wrapper {
+    border-bottom-left-radius: 120px;
+  }
+
+  .nav-container {
+    max-width: 1440px;
+    padding: 26px 5%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-container ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+
+  .skills-languages li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 122px;
+    height: 120px;
+    gap: 16px;
+    padding: 12px;
+  }
+
+  .nav-container ul li {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/desktopbg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-bottom-left-radius: 80px;
+    padding: 12rem 8rem;
+  }
+
+  .main-section {
+    max-width: 920px;
+  }
+
+  .main h1 {
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .main p {
+    color: #344563;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .main h3 {
+    color: #7f8cff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+  }
+
+  /* work section started for desktop */
+  .work-section {
+    display: grid;
+    gap: 142px;
+    padding: 114px 3%;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    gap: 24px;
+    max-width: 1156px;
+  }
+
+  .card-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 544px;
+  }
+
+  .card img {
+    max-width: 100%;
+    width: 50%;
+  }
+
+  .card-text h2 {
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .card-text p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #6b778c;
+  }
+
+  .card-text strong {
+    color: #344563;
+    font-weight: 500;
+  }
+
+  .card-text i {
+    color: #c1c7d0;
+    margin: 0 4px;
+  }
+
+  .card-text p.detail {
+    max-width: 496px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  /* Start of about section for desktop */
+  .aboutpage {
+    display: flex;
+    flex-direction: row;
+    border-top-right-radius: 120px;
+    gap: 24px;
+  }
+
+  .top {
+    max-width: 447px;
+  }
+
+  .top h2 {
+    color: #344563;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .top p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .bottom {
+    max-width: 684px;
+  }
+
+  .skills-languages {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .description p {
+    max-width: 569px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #ebebff;
+    text-align: center;
+  }
+
+  .skills-languages li p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #253858;
+  }
+
+  /* Start of contact page */
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    background-image: url(images/contact\ desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-top-left-radius: 120px;
+    align-items: center;
+  }
+
+  .contact-block {
+    max-width: 801px;
+    padding: 142px 0 127px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .description {
+    max-width: 569px;
+  }
+
+  .contact-block form {
+    max-width: 447px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+    margin: 0;
+  }
+
+  .contact-block button {
+    max-width: 142px;
+    padding: 12px 16px;
+    margin: 0;
+  }
+
+  fieldset > * {
+    border-radius: 2px;
+    border: 1px solid #cfd8dc;
+    padding: 15px 38px 15px 16px;
+  }
+
+  .blackline {
+    display: none;
+  }
 }
