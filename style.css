@@ -387,6 +387,7 @@ fieldset > * {
   .wrapper {
     border-bottom-left-radius: 120px;
   }
+
   .nav-container {
     max-width: 1440px;
     padding: 26px 5%;
@@ -426,7 +427,7 @@ fieldset > * {
     background-size: contain;
     background-position: center;
     border-bottom-left-radius: 80px;
-    max-width: 1440px; 
+    max-width: 1440px;
     padding: 289px 10%;
   }
 
