@@ -406,12 +406,11 @@ fieldset > * {
   .skills-languages li {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 122px;
     height: 120px;
     gap: 16px;
     padding: 12px;
-    align-items: center;
   }
 
   .nav-container ul li {
