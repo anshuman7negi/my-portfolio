@@ -383,10 +383,13 @@ fieldset > * {
 }
 
 /* Desktop version using media query */
-@media only screen and (width >= 768px) {
+@media screen and (min-width: 768px) {
+  .wrapper {
+    border-bottom-left-radius: 120px;
+  }
   .nav-container {
-    display: flex;
-    padding: 16px 144px;
+    max-width: 1440px;
+    padding: 26px 5%;
   }
 
   .hamburger {
@@ -415,18 +418,20 @@ fieldset > * {
   }
 
   .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url(images/desktopbg.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 289px 260px;
     border-bottom-left-radius: 80px;
+    max-width: 1440px; 
+    padding: 289px 10%;
   }
 
   .main-section {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
+    max-width: 920px;
   }
 
   .main h1 {
@@ -454,8 +459,9 @@ fieldset > * {
   /* work section started for desktop */
   .work-section {
     display: grid;
-    padding: 142px 142px;
     gap: 142px;
+    padding: 114px 0;
+    justify-content: center;
   }
 
   .card {
@@ -473,8 +479,7 @@ fieldset > * {
     display: flex;
     flex-direction: column;
     padding: 24px;
-    max-width: 100%;
-    width: 50%;
+    width: 544px;
   }
 
   .card img {
@@ -507,6 +512,7 @@ fieldset > * {
   }
 
   .card-text p.detail {
+    max-width: 496px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -517,14 +523,12 @@ fieldset > * {
   .aboutpage {
     display: flex;
     flex-direction: row;
-    padding: 142px;
     border-top-right-radius: 120px;
-    justify-content: flex-start;
     gap: 24px;
   }
 
   .top {
-    flex-basis: 41%;
+    max-width: 447px;
   }
 
   .top h2 {
@@ -542,7 +546,7 @@ fieldset > * {
   }
 
   .bottom {
-    flex-basis: 51%;
+    max-width: 684px;
   }
 
   .skills-languages {
@@ -552,12 +556,12 @@ fieldset > * {
   }
 
   .description p {
+    max-width: 569px;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     color: #ebebff;
     text-align: center;
-    margin: 12px 116px;
   }
 
   .skills-languages li p {
@@ -569,30 +573,41 @@ fieldset > * {
 
   /* Start of contact page */
   .contact-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
     background-image: url(images/contact\ desktop.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     border-top-left-radius: 120px;
+    align-items: center;
   }
 
   .contact-block {
-    padding: 142px 320px 127px 319px;
+    max-width: 801px;
+    padding: 142px 0 127px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 
   .description {
-    margin: 0;
+    max-width: 569px;
   }
 
   .contact-block form {
-    margin: 0 177px;
+    max-width: 447px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 27px;
+    margin: 0;
   }
 
   .contact-block button {
-    margin: 0 152px;
+    max-width: 142px;
     padding: 12px 16px;
   }
 
