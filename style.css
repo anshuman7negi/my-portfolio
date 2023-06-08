@@ -89,6 +89,10 @@ header .nav-container {
   line-height: 24px;
 }
 
+.main h3:hover {
+  transform: translate(20px);
+}
+
 .social-media {
   display: flex;
   gap: 20px;
@@ -123,6 +127,10 @@ header .nav-container {
 .card img {
   max-width: 100%;
   transition: transform 0.5s linear;
+}
+
+.card img:hover {
+  transform: scale(1.1);
 }
 
 .card-text {
