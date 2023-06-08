@@ -36,6 +36,19 @@ header .nav-container {
   margin-left: 12px;
 }
 
+.logo:hover{
+  animation: rotateOnce 1s ease-out;
+}
+
+@keyframes rotateOnce {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .hamburger {
   align-items: center;
   width: 40px;
