@@ -595,7 +595,6 @@ fieldset > * {
   .contact-container {
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
     background-image: url(images/contact\ desktop.svg);
     background-repeat: no-repeat;
     background-position: center;
