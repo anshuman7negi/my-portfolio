@@ -61,18 +61,27 @@ header .nav-container {
 }
 
 .main {
-  background-image: url(images/header-shapes\ mobile@2x.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding: 114px 24px;
+  max-height: 800px;
+    min-height: 550px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    border-radius: 0 0 0 4em;
+    background-color: #fff;
+    background-image: url(images/headerback.png);
+    background-size: 100% 85vh;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 .main-section {
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 8px;
+  align-items: flex-start;
+  height: 100%;
 }
 
 .main h1 {
@@ -141,7 +150,6 @@ header .nav-container {
 }
 
 .card img {
-  max-width: 100%;
   transition: transform 0.5s linear;
 }
 
@@ -152,7 +160,7 @@ header .nav-container {
 }
 
 .card img:hover {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 .card-text {
