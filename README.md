@@ -59,6 +59,12 @@ The goal of this project is to create a visually appealing portfolio that showca
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://anshuman7negi.github.io/my-portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 1. Go to this URL link: https://github.com/anshuman7negi/my-portfolio.git
