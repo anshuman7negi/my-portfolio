@@ -62,18 +62,18 @@ header .nav-container {
 
 .main {
   max-height: 800px;
-    min-height: 550px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 25px 10px 25px;
-    border-radius: 0 0 0 4em;
-    background-color: #fff;
-    background-image: url(images/headerback.png);
-    background-size: 100% 85vh;
-    background-position-x: center;
-    background-repeat: no-repeat;
+  min-height: 550px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px 10px 25px;
+  border-radius: 0 0 0 4em;
+  background-color: #fff;
+  background-image: url(images/headerback.png);
+  background-size: 100% 85vh;
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 
 .main-section {
