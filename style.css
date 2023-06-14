@@ -634,6 +634,7 @@ fieldset > * {
 
   .contact-block button {
     max-width: 142px;
+    font-size: 18px;
     padding: 12px 16px;
     margin: 0;
   }
