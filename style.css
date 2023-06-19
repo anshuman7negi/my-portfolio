@@ -59,17 +59,22 @@ header .nav-container {
 .mobile-menu {
   display: flex;
   visibility: hidden;
-  background-color: #6070ff;
+  background-color: rgba(96, 112, 255, 0.9);
   width: 100%;
   height: 200%;
   justify-content: space-between;
   position: fixed;
-  opacity: 0.9;
   padding: 11%;
+  z-index: 1;
+  mix-blend-mode: multiply;
 }
 
 .visible {
   visibility: visible;
+}
+
+.blurred {
+  filter: blur(8px);
 }
 
 .mobile-menu ul {
@@ -93,6 +98,7 @@ header .nav-container {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  opacity: 1;
 }
 
 .cancel-btn {
