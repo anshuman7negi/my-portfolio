@@ -68,6 +68,10 @@ header .nav-container {
   padding: 11%;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .mobile-menu ul {
   display: flex;
   margin-top: 100%;

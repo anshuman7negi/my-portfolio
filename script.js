@@ -1,4 +1,5 @@
-document.getElementsByClassName('hamburger').addEventListener('click',()=>{
+console.log("geflakfj")
+document.querySelector('.hamburger').addEventListener('click',()=>{
     console.log("hellow");
-    document.getElementsByClassName('mobile-menu').style.visibility=== visible;
+    document.querySelector('.mobile-menu').classList.toggle('visible')
 });
