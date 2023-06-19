@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -19,10 +20,22 @@
           <a class="hamburger" href="#"
             ><img src="images/hamburger.svg" alt="hamburger"
           /></a>
-          <ul>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
+
+          <div class="mobile-menu">
+            <ul>
+              <li><a href="">Portfolio</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <div class="cancel-btn">
+              <a href=""><img src="images/Icon - Cancel.svg" alt="cancel button"></a>
+            </div>
+          </div>
+
+          <ul class="desktop-menu">
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
         </nav>
       </header>
