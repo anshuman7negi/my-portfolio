@@ -480,6 +480,7 @@ fieldset > * {
 
   .nav-container ul li a {
     text-decoration: none;
+    color: #344563;
   }
 
   .skills-languages li {
