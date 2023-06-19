@@ -67,6 +67,7 @@ header .nav-container {
   padding: 11%;
   z-index: 1;
   mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
 }
 
 .visible {
