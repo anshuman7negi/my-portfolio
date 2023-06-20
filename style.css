@@ -278,8 +278,14 @@ section.hidden,
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  left:0;
+  height: calc(100vh - 110px);
+  width: calc(100vw - 32px);
   background-color: #fff;
+  padding: 18px 16px;
+  margin: 50px 16px;
 }
 
 .get-resume-btn {

@@ -73,12 +73,13 @@ for(let i = 0;i < cards.length;i++) {
 const seeProject=document.querySelectorAll('.project-details-btn');
 for(let i = 0;i < seeProject.length;i +=1) {
   seeProject[i].addEventListener('click' , ()=> {
-  
     document.getElementById(`card-${i}`).classList.toggle('visible');
-    
-    const hideElements = document.querySelectorAll('section, div.wrapper');
+    const hideElements = document.querySelectorAll('section:not(.main)');
     for (let i = 0; i < hideElements.length; i += 1) {
-      hideElements[i].classList.toggle('hidden');
+        hideElements[i].classList.toggle('hidden');
     }
+    
+    document.querySelector('.main').classList.toggle('blurred');
+    document.querySelector('header').classList.toggle('blurred');
  });
 }
