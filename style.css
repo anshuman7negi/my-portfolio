@@ -276,7 +276,10 @@ section.hidden,
 
 .popup {
   display: none;
-  background-color: red;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #fff;
 }
 
 .get-resume-btn {
