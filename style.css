@@ -279,6 +279,7 @@ section.hidden,
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
+  gap: 12px;
   top: 0;
   left:0;
   height: calc(100vh - 110px);
@@ -287,10 +288,30 @@ section.hidden,
   padding: 18px 16px;
   margin: 50px 16px;
   border-radius: 16px;
+  border: 2px solid red;
+}
+
+.popup-list {
+  display: flex;
+  list-style-type: none;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #6070ff;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
 }
 
 .get-resume-btn {
   display: flex;
+}
+
+.popupbtns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 
 .project-details-btn input {
@@ -302,6 +323,31 @@ section.hidden,
   font-size: 17px;
   line-height: 24px;
   color: #396df2;
+}
+
+.popup-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 16px;
+  color: #7a869a;
+}
+
+.close-popup {
+  position: absolute;
+  top: 30;
+  right: 0;
+  margin-right: 30px;
+}
+
+.popup-name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
 }
 
 /** End: Work Section **/
