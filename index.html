@@ -14,15 +14,27 @@
       <header>
         <nav class="nav-container">
           <a class="logo" href="#"
-            ><img src="images/My Logo.svg" alt="My Logo"
+            ><img src="images/My Logo.svg" alt="Logo image"
           /></a>
           <a class="hamburger" href="#"
             ><img src="images/hamburger.svg" alt="hamburger"
           /></a>
-          <ul>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
+
+          <div class="mobile-menu">
+            <ul>
+              <li><a href="#work-section">Portfolio</a></li>
+              <li><a href="#aboutpage">About</a></li>
+              <li><a href="#contact-page">Contact</a></li>
+            </ul>
+            <div class="cancel-btn">
+              <a><img src="images/Icon - Cancel.svg" alt="cancel button"></a>
+            </div>
+          </div>
+
+          <ul class="desktop-menu">
+            <li><a href="#work-section">Portfolio</a></li>
+            <li><a href="#aboutpage">About</a></li>
+            <li><a href="#contact-page">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -50,7 +62,7 @@
               /></a>
             </li>
             <li>
-              <a href="#"><img src="images/microverse.svg" alt="M icon" /></a>
+              <a href="#"><img src="images/microverse.svg" alt="Message icon" /></a>
             </li>
             <li>
               <a href="#"
@@ -59,7 +71,7 @@
             </li>
             <li>
               <a href="#"
-                ><img src="images/twitter.svg" alt="Peace icon"
+                ><img src="images/twitter.svg" alt="twitter icon"
               /></a>
             </li>
           </ul>
@@ -69,10 +81,10 @@
     </div>
 
     <!--Starting  of work  section-->
-    <section class="work-section">
+    <section class="work-section" id="work-section">
       <!--First Card starting-->
       <div class="card">
-        <img src="images/Snapshoot Portfolio.svg" alt="Project Screenshot" />
+        <img src="images/Snapshoot Portfolio.svg" alt="card image 1" />
         <div class="card-text">
           <h2>Tonic</h2>
           <p>
@@ -96,7 +108,7 @@
       </div>
      <!--Second Card starting-->
       <div class="card card-reverse">
-        <img src="images/Multi-post-stories.svg" alt="Project Screenshot" />
+        <img src="images/Multi-post-stories.svg" alt="card image 2" />
         <div class="card-text">
           <h2>Multi-Post Stories</h2>
           <p>
@@ -120,7 +132,7 @@
       </div>
      <!--Third Card starting-->
      <div class="card">
-        <img src="images/third-card.svg" alt="Project Screenshot" />
+        <img src="images/third-card.svg" alt="card image 3" />
         <div class="card-text">
           <h2>Tonic</h2>
           <p>
@@ -144,7 +156,7 @@
       </div>
         <!--Fouth Card starting-->
         <div class="card card-reverse">
-        <img src="images/fouth-card.svg" alt="Project Screenshot" />
+        <img src="images/fouth-card.svg" alt="card image 4" />
         <div class="card-text">
           <h2>Multi-Post Stories</h2>
           <p>
@@ -171,7 +183,7 @@
     <!--End of work section-->
 
      <!--Start of about section-->
-     <section class="aboutpage">
+     <section class="aboutpage" id="aboutpage">
         <div class="top">
             <h2>About Myself</h2>
             <p>Hello I’m a software developer! I can help you build a product ,
@@ -190,7 +202,7 @@
                     /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="images/microverse.svg" alt="M icon" /></a>
+                    <a href="#"><img src="images/microverse.svg" alt="Message icon" /></a>
                   </li>
                   <li>
                     <a href="#"
@@ -199,7 +211,7 @@
                   </li>
                   <li>
                     <a href="#"
-                      ><img src="images/twitter.svg" alt="Peace icon"
+                      ><img src="images/twitter.svg" alt="twitter icon"
                     /></a>
                   </li>
                 </ul>
@@ -218,15 +230,15 @@
                 <li >
                     <ul class="skills-languages">
                         <li>
-                            <img src="images/js.svg" alt="">
+                            <img src="images/js.svg" alt="JavaScript icon">
                             <p>JavaScript</p>
                         </li>
                         <li>
-                            <img src="images/html.svg" alt="">
+                            <img src="images/html.svg" alt="HTML icon">
                             <p>HTML</p>
                         </li>
                         <li>
-                            <img src="images/css.svg" alt="">
+                            <img src="images/css.svg" alt="CSS icon">
                             <p>CSS</p>
                         </li>
                     </ul>
@@ -246,7 +258,7 @@
       </section>
       <!--End of about section-->
        <!--Start of Contact Page-->
-       <section class="contact-page">
+       <section class="contact-page" id="contact-page">
         <div class="contact-container">
           <div class="contact-block">
             <div class="description">
@@ -256,8 +268,8 @@
             </div>
             <form action="https://formspree.io/f/mqkovder" method="post">
                 <fieldset>
-                    <input name="username" type="text" placeholder="Lorem Ipsum" maxlength="30" required>
-                    <input name="useremail" type="email" placeholder="loremipsum@gmail.com" required>
+                    <input name="username" type="text" placeholder="Enter your name..." maxlength="30" required>
+                    <input name="useremail" type="email" placeholder="Enter your email..." required>
                     <textarea  name="message" cols="30" rows="10" placeholder="Write your message here..." maxlength="500" required></textarea>
                 </fieldset>
                 <button type="submit">Get in touch</button>
@@ -268,5 +280,7 @@
        
       </section>
       <!-- End of contact page -->
+
+      <script src="script.js"></script>
   </body>
 </html>
