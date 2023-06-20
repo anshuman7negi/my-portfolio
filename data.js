@@ -36,14 +36,15 @@ for(let i = 0;i < cards.length;i++) {
     cardContainer.id=`card-${i}`;
     cardContainer.classList.add("popup");
 
-    console.log(cardContainer);
+    let closePopup = document.createElement('a');
+    closePopup.innerHTML = '<img src="images/Icon - Cancel.svg">';
+    closePopup.classList.add("close-popup");
+    cardContainer.appendChild(closePopup);
 
     let name=document.createElement("h2");
     name.textContent=cardData[i].name;
     name.classList.add("ab")
     cardContainer.appendChild(name);
-
-    console.log(name);
 
     let heading=document.createElement("p");
     heading.innerHTML=` <strong>${cardData[i].heading[0]}</strong>
@@ -78,7 +79,6 @@ for(let i = 0;i < seeProject.length;i +=1) {
     for (let i = 0; i < hideElements.length; i += 1) {
         hideElements[i].classList.toggle('hidden');
     }
-    
     document.querySelector('.main').classList.toggle('blurred');
     document.querySelector('header').classList.toggle('blurred');
  });
