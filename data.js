@@ -52,6 +52,11 @@ for(let i = 0;i < cards.length;i++) {
     heading.classList.add("abc");
     cardContainer.appendChild(heading);
 
+    let projectImage = document.createElement("img");
+    projectImage.src = cardData[i].image;
+    projectImage.classList.add("aa");
+    cardContainer.appendChild(projectImage);
+
     let detail=document.createElement("p");
     detail.textContent=cardData[i].cardDetail;
     detail.classList.add("abc");
