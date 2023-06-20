@@ -76,6 +76,11 @@ header .nav-container {
   visibility: visible;
 }
 
+section.hidden,
+.wrapper.hidden {
+  display: none;
+}
+
 .blurred {
   filter: blur(10px);
 }
