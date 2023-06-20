@@ -62,6 +62,10 @@ for(let i = 0;i < cards.length;i++) {
     detail.classList.add("abc");
     cardContainer.appendChild(detail);
 
+    let projectSkills = document.createElement('ul');
+    projectSkills.innerHTML = `<li>${cardData[i].skills[0]}</li><li>${cardData[i].skills[1]}</li><li>${cardData[i].skills[2]}</li>`
+    projectSkills.classList.add("abc");
+    cardContainer.appendChild(projectSkills);
 
     document.body.appendChild(cardContainer);
 }
