@@ -24,7 +24,7 @@ const EMAIL_INVALID = 'Please enter email in lower case !';
 
 submissionForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  const emailValid = validateEmail(form.elements['useremail'], EMAIL_INVALID);
+  const emailValid = validateEmail(form.elements.useremail, EMAIL_INVALID);
   if (emailValid) {
     submissionForm.submit();
   }
