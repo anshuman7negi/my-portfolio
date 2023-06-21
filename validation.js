@@ -10,7 +10,7 @@ function showError(input, message) {
 }
 
 function validateEmail(input, invalidMsg) {
-  const emailRegex = /^[^A-Z\s]+\.[^A-Z\s]+$/;
+  const emailRegex = /[^A-Z]/g;
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
     return showError(input, invalidMsg);
@@ -24,8 +24,8 @@ const EMAIL_INVALID = 'Please enter email in lower case !';
 
 submissionForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  const emailValid = validateEmail(form.elements.useremail, EMAIL_INVALID);
+  const emailValid = validateEmail(form.elements['useremail'], EMAIL_INVALID);
   if (emailValid) {
-    form.submit();
+    submissionForm.submit();
   }
 });
