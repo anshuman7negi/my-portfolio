@@ -39,7 +39,7 @@ The goal of this project is to create a visually appealing portfolio that showca
 
 <details>
   <summary>Client</summary>
-    <ul>
+  <ul>
     <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML">html5</a></li>
   </ul>
 </details>
