@@ -10,12 +10,12 @@ function showError(input, message) {
 }
 
 function validateEmail(input, invalidMsg) {
-  const emailRegex = /[^A-Z]/g;
+  const emailRegex = /[A-Z]/;
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
-    return showError(input, invalidMsg);
+    return true;
   }
-  return true;
+  return showError(input, invalidMsg);
 }
 
 const form = document.querySelector('#contact-page fieldset');
