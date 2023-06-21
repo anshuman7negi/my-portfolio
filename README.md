@@ -40,7 +40,7 @@ The goal of this project is to create a visually appealing portfolio that showca
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS">html5</a></li>
+    <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML">html5</a></li>
   </ul>
 </details>
 
@@ -53,7 +53,7 @@ The goal of this project is to create a visually appealing portfolio that showca
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="[https://developer.mozilla.org/ru/docs/Web/CSS](https://developer.mozilla.org/ru/docs/Web/JavaScript)">CSS3</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">javaScript</a></li>
   </ul>
 </details>
 
