@@ -281,6 +281,7 @@ section.hidden,
   background-color: #fff;
   padding: 20px 16px;
   border-radius: 16px;
+  opacity: 1;
 }
 
 .popcardImage {
@@ -299,6 +300,7 @@ section.hidden,
  bottom: 0;
  height: 823px;
  padding: 10%;
+ opacity: 0.9;
 }
 
 .popup-list {
@@ -335,11 +337,13 @@ section.hidden,
 .popcardbtn {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 5px;
   padding: 10px;
   background: #fff;
   border: 2px solid #396df2;
   border-radius: 8px;
+  width: 135px;
 }
 
 .popcardbtn a {
@@ -820,6 +824,8 @@ fieldset > * {
   }
 
   .firstcardcontainer {
+    display: flex;
+    gap: 10px;
     flex-direction: column;
     justify-content: space-between;
     background-color: #fff;
@@ -828,12 +834,14 @@ fieldset > * {
     width: fit-content;
     position: relative;
     width: 100%;
+    opacity: 1;
   }
 
   .popup {
     display: none;
-    background-color: red;
     height: 120vh;
+    background: #c1c7d0;
+    opacity: 0.8;
   }
 
   .popcardImage {
@@ -853,26 +861,24 @@ fieldset > * {
   .popcard-top {
     display: flex;
     flex-direction: row;
-    width: 778px;
     gap: 10px;
   }
 
   .popcard-bottom {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 20px;
-    width: 1500px;
   }
 
   .pop-card-projectDetail {
     max-width: 778px;
-    max-height: 271px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+    color: #344563;
   }
  
 }
+

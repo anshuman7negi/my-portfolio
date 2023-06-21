@@ -46,6 +46,7 @@ for (let i = 0; i < cards.length; i++) {
     firstcardContainer.appendChild(name);
 
     let closePopup = document.createElement('a');
+    closePopup.id=`closepopup-${i}`;
     closePopup.innerHTML = '<img src="images/card-cancel-btn.svg">';
     closePopup.classList.add("close-popup");
     firstcardContainer.appendChild(closePopup);
@@ -118,14 +119,17 @@ for (let i = 0; i < seeProject.length; i += 1) {
 
 
 // Card Cancel Button
-document.querySelector('.close-popup').addEventListener('click', () => {
-    document.querySelector('.popup').classList.toggle('visible');
-    const hideElements = document.querySelectorAll('section:not(.main)');
-    for (let i = 0; i < hideElements.length; i += 1) {
-        hideElements[i].classList.toggle('hidden');
-    }
-    document.querySelector('.main').classList.toggle('blurred');
-    document.querySelector('header').classList.toggle('blurred');
-    document.querySelector('header').classList.toggle("cardBgColor");
-    document.querySelector('.main').classList.toggle("cardBgColor");
-});
+let cardCloseBtn=document.querySelectorAll('.firstcardcontainer .close-popup');
+for(let i=0;i<cardCloseBtn.length;i++) {
+    cardCloseBtn[i].addEventListener('click',()=> {
+        document.getElementById(`card-${i}`).classList.toggle('visible');
+        const hideElements = document.querySelectorAll('section:not(.main)');
+        for (let i = 0; i < hideElements.length; i += 1) {
+            hideElements[i].classList.toggle('hidden');
+        }
+        document.querySelector('.main').classList.toggle('blurred');
+        document.querySelector('header').classList.toggle('blurred');
+        document.querySelector('header').classList.toggle("cardBgColor");
+        document.querySelector('.main').classList.toggle("cardBgColor");
+    })
+}
