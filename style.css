@@ -275,6 +275,7 @@ section.hidden,
 }
 
 .firstcardcontainer {
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
@@ -826,25 +827,17 @@ fieldset > * {
     border-radius: 16px;
     width: fit-content;
     position: relative;
+    width: 100%;
   }
 
   .popup {
     display: none;
-    align-items: center;
-    justify-content: center;
-    background: #C1C7D0;
-   position: absolute;
-   top: 0;
-   right: 0;
-   left: 0;
-   bottom: 0;
-   backdrop-filter: blur(10px);
-   z-index: 1;
+    background-color: red;
+    height: 120vh;
   }
 
   .popcardImage {
     max-height: 586px;
-    width: 100%;
   }
 
   .popup-list {
