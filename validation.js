@@ -30,5 +30,12 @@ const form = document.querySelector("#contact-page");
 
 const EMAIL_INVALID = "Please enter email in lower case !";
 
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
+  let emailValid = validateEmail(form.elements["useremail"], EMAIL_INVALID);
+  if (emailValid) {
+    form.submit();
+  }
+});
 
