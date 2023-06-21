@@ -15,5 +15,20 @@ function showSuccess(input) {
 
 
 
+function validateEmail(input,invalidMsg) {
+
+	const emailRegex =/'^[^A-Z]+[^A-Z]/
+
+	const email = input.value.trim();
+	if (!emailRegex.test(email)) {
+		return showError(input, invalidMsg);
+	}
+	return true;
+}
+
+const form = document.querySelector("#contact-page");
+
+const EMAIL_INVALID = "Please enter email in lower case !";
+
 
 
