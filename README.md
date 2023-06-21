@@ -39,15 +39,21 @@ The goal of this project is to create a visually appealing portfolio that showca
 
 <details>
   <summary>Client</summary>
-  <ul>
-    <li><a href="#">html5</a></li>
+    <ul>
+    <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML">html5</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">CSS3</a></li>
+    <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS3</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">javaScript</a></li>
   </ul>
 </details>
 
