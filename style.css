@@ -526,7 +526,6 @@ form {
 fieldset {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   border: 0;
 }
 
@@ -534,6 +533,14 @@ fieldset > * {
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   padding: 15px 38px 15px 16px;
+}
+
+fieldset input[name="username"] {
+  margin-bottom: 20px;
+}
+
+fieldset input[name="useremail"] {
+  margin-bottom: 2px;
 }
 
 .contact-block button {
@@ -559,6 +566,21 @@ fieldset > * {
 .contact-block button:disabled {
   color: #5e6c84;
   background: #fff;
+}
+
+input.error {
+  border: red 1px solid;
+}
+
+.contact-block small {
+  display: block;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5px;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  color: #fff;
 }
 
 .blackline {
