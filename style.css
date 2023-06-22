@@ -286,7 +286,6 @@ section.hidden,
   background-color: #fff;
   padding: 20px 16px;
   border-radius: 16px;
-  opacity: 1;
 }
 
 .popcardImage {
@@ -297,7 +296,6 @@ section.hidden,
   display: none;
   align-items: center;
   justify-content: center;
-  background: #c1c7d0;
   position: absolute;
   top: 0;
   right: 0;
@@ -305,7 +303,8 @@ section.hidden,
   bottom: 0;
   height: 823px;
   padding: 10%;
-  opacity: 0.9;
+  background: rgba(193, 199, 208,0.6);
+  backdrop-filter: blur(8px);
 }
 
 .popup-list {
@@ -833,14 +832,13 @@ fieldset > * {
     border-radius: 16px;
     width: fit-content;
     position: relative;
-    opacity: 100%;
   }
 
   .popup {
     display: none;
     height: 120vh;
-    background: #c1c7d0;
-    opacity: 0.8;
+    background: rgba(193, 199, 208,0.6);
+    backdrop-filter: blur(8px);
   }
 
   .popcardImage {
@@ -878,4 +876,5 @@ fieldset > * {
     line-height: 30px;
     color: #344563;
   }
+
 }
