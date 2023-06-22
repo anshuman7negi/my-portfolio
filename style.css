@@ -70,8 +70,15 @@ header .nav-container {
   backdrop-filter: blur(10px);
 }
 
-.visible {
+.visible,
+.popup.visible {
+  display: flex;
   visibility: visible;
+}
+
+section.hidden,
+.wrapper.hidden {
+  display: none;
 }
 
 .blurred {
@@ -89,6 +96,11 @@ header .nav-container {
 
 .social-media a {
   text-decoration: none;
+}
+
+.popcardbtn a {
+  text-decoration: none;
+  color: #396df2;
 }
 
 .mobile-menu ul a {
@@ -267,8 +279,85 @@ header .nav-container {
   border-radius: 8px;
 }
 
+.firstcardcontainer {
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px 16px;
+  border-radius: 16px;
+}
+
+.popcardImage {
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 823px;
+  padding: 10%;
+  background: rgba(193, 199, 208, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.popup-list {
+  display: flex;
+  list-style-type: none;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #6070ff;
+}
+
+.popup-list li {
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
 .get-resume-btn {
   display: flex;
+}
+
+.cardBgColor {
+  background: #c1c7d0;
+  mix-blend-mode: multiply;
+}
+
+.popupbtns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.popcardbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #396df2;
+  border-radius: 8px;
+  width: 135px;
+}
+
+.popcardbtn input {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
 }
 
 .project-details-btn input {
@@ -280,6 +369,30 @@ header .nav-container {
   font-size: 17px;
   line-height: 24px;
   color: #396df2;
+}
+
+.popup-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 16px;
+  color: #7a869a;
+}
+
+.close-popup {
+  position: absolute;
+  top: 30px;
+  right: 32px;
+}
+
+.popup-name {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
 }
 
 /** End: Work Section **/
@@ -455,6 +568,13 @@ fieldset > * {
   height: 5px;
   align-self: center;
   border-radius: 10px;
+}
+
+.popcard-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
 }
 
 /* Desktop version using media query */
@@ -700,5 +820,60 @@ fieldset > * {
 
   .blackline {
     display: none;
+  }
+
+  .firstcardcontainer {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px 16px;
+    border-radius: 16px;
+    width: fit-content;
+    position: relative;
+  }
+
+  .popup {
+    display: none;
+    height: 120vh;
+    background: rgba(193, 199, 208, 0.6);
+    backdrop-filter: blur(8px);
+  }
+
+  .popcardImage {
+    max-height: 586px;
+  }
+
+  .popup-list {
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #6070ff;
+  }
+
+  .popcard-top {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .popcard-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pop-card-projectDetail {
+    max-width: 778px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
   }
 }
