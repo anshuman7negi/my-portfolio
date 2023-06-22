@@ -5,6 +5,8 @@ const cardData = [
     cardDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     skills: ['HTML', 'CSS', 'javaScript'],
     image: 'images/Snapshoot Portfolio.svg',
+    live_version: 'https://anshuman7negi.github.io/my-portfolio/',
+    link_source: 'https://github.com/anshuman7negi/my-portfolio',
   },
   {
     name: 'Tonic',
@@ -29,9 +31,47 @@ const cardData = [
   },
 ];
 
-const cards = document.querySelectorAll('.card');
+for(let i=0; i < cardData.length; i += 1) {
+  const worksection=document.getElementById('work-section');
+  const card=document.createElement('div');
+  card.classList.add('card');
 
-for (let i = 0; i < cards.length; i += 1) {
+  const cardImage=document.createElement('img');
+  cardImage.src=cardData[i].image;
+  card.appendChild(cardImage);
+
+  const cardText=document.createElement('div');
+  cardText.classList.add("card-text");
+  card.appendChild(cardText);
+
+  const title=document.createElement('h2')
+  title.textContent=cardData[i].name;
+  cardText.appendChild(title);
+
+  const cardPara=document.createElement('p');
+  cardPara.innerHTML= ` <strong>${cardData[i].heading[0]}</strong>
+  <i class="fa-solid fa-circle fa-2xs"></i> ${cardData[i].heading[1]}
+  <i class="fa-solid fa-circle fa-2xs"></i> ${cardData[i].heading[2]}`;
+  cardText.appendChild(cardPara);
+
+  const cardProjectDetail=document.createElement('p');
+  cardProjectDetail.textContent=cardData[i].cardDetail;
+  cardProjectDetail.classList.add('detail');
+  cardText.appendChild(cardProjectDetail);
+  
+  const technologies=document.createElement('ul');
+  technologies.innerHTML = `<li>${cardData[i].skills[0]}</li><li>${cardData[i].skills[1]}</li><li>${cardData[i].skills[2]}</li>`;
+  cardText.appendChild(technologies);
+
+  const cardButtoncontainer=document.createElement('div');
+  cardButtoncontainer.innerHTML=' <input class="btn" type="button" value="See Project" />'
+  cardButtoncontainer.classList.add("project-details-btn");
+  cardText.appendChild(cardButtoncontainer);
+
+  worksection.appendChild(card);
+}
+
+for (let i = 0; i < cardData.length; i += 1) {
   const cardContainer = document.createElement('div');
   cardContainer.id = `card-${i}`;
   cardContainer.classList.add('popup');
@@ -40,10 +80,10 @@ for (let i = 0; i < cards.length; i += 1) {
   firstcardContainer.classList.add('firstcardcontainer');
   cardContainer.appendChild(firstcardContainer);
 
-  const name = document.createElement('h2');
-  name.textContent = cardData[i].name;
-  name.classList.add('popup-name');
-  firstcardContainer.appendChild(name);
+  const popname = document.createElement('h2');
+  popname.textContent = cardData[i].name;
+  popname.classList.add('popup-name');
+  firstcardContainer.appendChild(popname);
 
   const closePopup = document.createElement('a');
   closePopup.id = `closepopup-${i}`;
@@ -89,12 +129,12 @@ for (let i = 0; i < cards.length; i += 1) {
   bottomcardContainer.appendChild(btnContainer);
 
   const liveBtn = document.createElement('div');
-  liveBtn.innerHTML = '<a href="https://anshuman7negi.github.io/my-portfolio/">See live</a> <img src="images/live-icon.svg" alt="Live project icon">';
+  liveBtn.innerHTML = `<a href="${cardData[i].live_version}">See live</a> <img src="images/live-icon.svg" alt="Live project icon">`;
   liveBtn.classList.add('popcardbtn');
   btnContainer.appendChild(liveBtn);
 
   const liveSource = document.createElement('div');
-  liveSource.innerHTML = '<a href="https://github.com/anshuman7negi/my-portfolio">See source</a> <img src="images/sourcecode-git-icon.svg" alt="See source code icon">';
+  liveSource.innerHTML = `<a href="${cardData[i].link_source}">See source</a> <img src="images/sourcecode-git-icon.svg" alt="See source code icon">`;
   liveSource.classList.add('popcardbtn');
   btnContainer.appendChild(liveSource);
 

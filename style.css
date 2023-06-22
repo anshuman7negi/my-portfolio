@@ -833,7 +833,7 @@ fieldset > * {
     border-radius: 16px;
     width: fit-content;
     position: relative;
-    opacity: 1;
+    opacity: 100%;
   }
 
   .popup {
