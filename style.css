@@ -303,7 +303,7 @@ section.hidden,
   bottom: 0;
   height: 823px;
   padding: 10%;
-  background: rgba(193, 199, 208,0.6);
+  background: rgba(193, 199, 208, 0.6);
   backdrop-filter: blur(8px);
 }
 
@@ -837,7 +837,7 @@ fieldset > * {
   .popup {
     display: none;
     height: 120vh;
-    background: rgba(193, 199, 208,0.6);
+    background: rgba(193, 199, 208, 0.6);
     backdrop-filter: blur(8px);
   }
 
@@ -876,5 +876,4 @@ fieldset > * {
     line-height: 30px;
     color: #344563;
   }
-
 }

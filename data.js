@@ -31,41 +31,41 @@ const cardData = [
   },
 ];
 
-for(let i=0; i < cardData.length; i += 1) {
-  const worksection=document.getElementById('work-section');
-  const card=document.createElement('div');
+for (let i = 0; i < cardData.length; i += 1) {
+  const worksection = document.getElementById('work-section');
+  const card = document.createElement('div');
   card.classList.add('card');
 
-  const cardImage=document.createElement('img');
-  cardImage.src=cardData[i].image;
+  const cardImage = document.createElement('img');
+  cardImage.src = cardData[i].image;
   card.appendChild(cardImage);
 
-  const cardText=document.createElement('div');
-  cardText.classList.add("card-text");
+  const cardText = document.createElement('div');
+  cardText.classList.add('card-text');
   card.appendChild(cardText);
 
-  const title=document.createElement('h2')
-  title.textContent=cardData[i].name;
+  const title = document.createElement('h2');
+  title.textContent = cardData[i].name;
   cardText.appendChild(title);
 
-  const cardPara=document.createElement('p');
-  cardPara.innerHTML= ` <strong>${cardData[i].heading[0]}</strong>
+  const cardPara = document.createElement('p');
+  cardPara.innerHTML = ` <strong>${cardData[i].heading[0]}</strong>
   <i class="fa-solid fa-circle fa-2xs"></i> ${cardData[i].heading[1]}
   <i class="fa-solid fa-circle fa-2xs"></i> ${cardData[i].heading[2]}`;
   cardText.appendChild(cardPara);
 
-  const cardProjectDetail=document.createElement('p');
-  cardProjectDetail.textContent=cardData[i].cardDetail;
+  const cardProjectDetail = document.createElement('p');
+  cardProjectDetail.textContent = cardData[i].cardDetail;
   cardProjectDetail.classList.add('detail');
   cardText.appendChild(cardProjectDetail);
-  
-  const technologies=document.createElement('ul');
+
+  const technologies = document.createElement('ul');
   technologies.innerHTML = `<li>${cardData[i].skills[0]}</li><li>${cardData[i].skills[1]}</li><li>${cardData[i].skills[2]}</li>`;
   cardText.appendChild(technologies);
 
-  const cardButtoncontainer=document.createElement('div');
-  cardButtoncontainer.innerHTML=' <input class="btn" type="button" value="See Project" />'
-  cardButtoncontainer.classList.add("project-details-btn");
+  const cardButtoncontainer = document.createElement('div');
+  cardButtoncontainer.innerHTML = ' <input class="btn" type="button" value="See Project" />';
+  cardButtoncontainer.classList.add('project-details-btn');
   cardText.appendChild(cardButtoncontainer);
 
   worksection.appendChild(card);
@@ -149,7 +149,6 @@ for (let i = 0; i < seeProject.length; i += 1) {
     for (let i = 0; i < hideElements.length; i += 1) {
       hideElements[i].classList.toggle('hidden');
     }
-
   });
 }
 
