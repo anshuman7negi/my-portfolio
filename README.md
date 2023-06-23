@@ -89,7 +89,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```
-git clone yourlink repo https://github.com/anshuman7negi/my-portfolio.git
+git clone your link repo https://github.com/anshuman7negi/my-portfolio.git
 
 cd your folder name
 ```
@@ -118,7 +118,7 @@ npx hint .
 
 You can deploy this project using:
 
-Deploy this project on any websever
+Deploy this project on any web server
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
