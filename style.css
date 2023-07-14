@@ -556,6 +556,7 @@ fieldset input[name="useremail"] {
 .contact-block button:hover {
   color: #fff;
   background: #6070ff;
+  border: 2px solid #fff;
 }
 
 .contact-block button:active {
@@ -864,7 +865,7 @@ input.error {
   }
 
   .popcardImage {
-    max-height: 586px;
+    max-height: 376px;
   }
 
   .popup-list {
