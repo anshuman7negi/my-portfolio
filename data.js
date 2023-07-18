@@ -4,6 +4,7 @@ const cardData = [
     heading: ['To Do List', 'Back End Dev', '2015'],
     cardDetail: "A simple to-do list application that helps to organize your daily tasks and keep track of the task you have completed and the task you are yet to have completed, and also deleting the completed task leaving those yet to be completed.",
     skills: ['HTML', 'CSS', 'javaScript'],
+    smallImage: 'images/firstProjectSmall.jpeg',
     image: 'images/firstProject.png',
     live_version: 'https://anshuman7negi.github.io/Todo-list-webpack/dist/',
     link_source: 'https://github.com/anshuman7negi/Todo-list-webpack',
@@ -13,21 +14,31 @@ const cardData = [
     heading: ['CANOPY', 'Back End Dev', '2015'],
     cardDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     skills: ['HTML', 'CSS', 'javaScript'],
+    smallImage: 'images/firstProjectSmall.jpeg',
     image: 'images/Multi-post-stories.svg',
+    live_version: 'https://anshuman7negi.github.io/Todo-list-webpack/dist/',
+    link_source: 'https://github.com/anshuman7negi/Todo-list-webpack',
   },
   {
     name: 'Tonic',
     heading: ['CANOPY', 'Back End Dev', '2015'],
     cardDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     skills: ['HTML', 'CSS', 'javaScript'],
+    smallImage: 'images/firstProjectSmall.jpeg',
     image: 'images/third-card.svg',
+    live_version: 'https://anshuman7negi.github.io/Todo-list-webpack/dist/',
+    link_source: 'https://github.com/anshuman7negi/Todo-list-webpack',
   },
   {
     name: 'Tonic',
     heading: ['CANOPY', 'Back End Dev', '2015'],
     cardDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     skills: ['HTML', 'CSS', 'javaScript'],
+    smallImage: 'images/firstProjectSmall.jpeg',
+    smallImage: 'images/firstProjectSmall.jpeg',
     image: 'images/fouth-card.svg',
+    live_version: 'https://anshuman7negi.github.io/Todo-list-webpack/dist/',
+    link_source: 'https://github.com/anshuman7negi/Todo-list-webpack',
   },
 ];
 
@@ -37,7 +48,7 @@ for (let i = 0; i < cardData.length; i += 1) {
   card.classList.add('card');
 
   const cardImage = document.createElement('img');
-  cardImage.src = cardData[i].image;
+  cardImage.src = window.innerWidth < 768 ? cardData[i].smallImage : cardData[i].image;
   card.appendChild(cardImage);
 
   const cardText = document.createElement('div');
