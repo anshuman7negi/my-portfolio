@@ -713,7 +713,7 @@ input.error {
   .card img {
     max-width: 100%;
     width: 50%;
-    height: 100%;
+    height: initial;
   }
 
   .card-text h2 {
