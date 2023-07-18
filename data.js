@@ -1,12 +1,12 @@
 const cardData = [
   {
-    name: 'Tonic',
-    heading: ['CANOPY', 'Back End Dev', '2015'],
-    cardDetail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    name: 'To-Do List',
+    heading: ['To Do List', 'Back End Dev', '2015'],
+    cardDetail: "A simple to-do list application that helps to organize your daily tasks and keep track of the task you have completed and the task you are yet to have completed, and also deleting the completed task leaving those yet to be completed.",
     skills: ['HTML', 'CSS', 'javaScript'],
-    image: 'images/Snapshoot Portfolio.svg',
-    live_version: 'https://anshuman7negi.github.io/my-portfolio/',
-    link_source: 'https://github.com/anshuman7negi/my-portfolio',
+    image: 'images/firstProject.png',
+    live_version: 'https://anshuman7negi.github.io/Todo-list-webpack/dist/',
+    link_source: 'https://github.com/anshuman7negi/Todo-list-webpack',
   },
   {
     name: 'Tonic',
